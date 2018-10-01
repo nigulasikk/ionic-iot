@@ -1,0 +1,8 @@
+{
+  "name": "MyIotApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "38deb71a"
+}
