@@ -26,7 +26,6 @@ export class WeatherPage {
     });
   }
   viewWeatherDayDetail(){
-     this.navCtrl.push('DayWeatherPage', {
-    });
+    this.navCtrl.push('DayWeatherPage', {});
   }
 }

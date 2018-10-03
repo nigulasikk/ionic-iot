@@ -32,6 +32,9 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
+    { title: 'EquipmentPhoto', component: 'EquipmentPhotoPage' },
+    { title: 'Equipment', component: 'EquipmentPage' },
+    { title: 'DayClimate', component: 'DayClimatePage' },
     { title: 'DayWeather', component: 'DayWeatherPage' },
     { title: 'Weather', component: 'WeatherPage' },
     { title: 'Tutorial', component: 'TutorialPage' },
