@@ -21,11 +21,23 @@ export class WeatherPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad WeatherPage');
   }
+  // 点击柱状图 跳转到当天天气详情
   viewClimateDayDetail(){
     this.navCtrl.push('DayClimatePage', {
     });
   }
   viewWeatherDayDetail(){
     this.navCtrl.push('DayWeatherPage', {});
+  }
+  // 切换tab
+  changeTab(tabname){
+    if ( tabname === 'comfort') {
+      this.navCtrl.push('ComfortPage', {});
+    } else  if ( tabname === 'weather'){
+      this.navCtrl.push('WeatherPage', {});
+    } else  if ( tabname === 'equipment'){
+      this.navCtrl.push('EquipmentPage', {});
+    }
+
   }
 }

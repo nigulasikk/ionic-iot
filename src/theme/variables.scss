@@ -12,8 +12,8 @@ $font-path: "../assets/fonts";
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
 
-$text-color:        #000;
-$background-color:  #fff;
+$text-color:        #ffffff;
+$background-color:  rgb(33,33,33);
 
 
 // Named Color Variables
@@ -30,7 +30,7 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  black:      #2883bf,
+  bgcolor:    rgb(33,33,33),
   yellow:     yellow
 );
 
@@ -46,9 +46,14 @@ $colors: (
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-$toolbar-md-title-text-color: map-get($colors, black);
+$toolbar-md-title-text-color: map-get($colors, bgcolor);
 $toolbar-md-background: map-get($colors, yellow);
-
+a.tab-button{
+  background: map-get($colors, bgcolor);
+}
+.tabs-ios a.tab-button{
+  color:white;
+}
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here

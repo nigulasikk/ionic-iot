@@ -4,17 +4,20 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!-- <ion-header>
 
   <ion-navbar>
     <ion-title>weatherPage</ion-title>
   </ion-navbar>
 
-</ion-header>
+</ion-header> -->
 
 
 <ion-content padding>
-  <span>Hello World</span>
+  <div class="personinfo">
+    <div class="pname">Adam</div>
+    <div class="company">ABC CROP.</div>
+  </div>
   <ion-item class="city">
     <ion-select class="city-drop-down"  [(ngModel)]="city" interface="popover">
       <ion-option value="1" >Bacon</ion-option>
@@ -22,7 +25,11 @@
       <ion-option value="3">xxxxXXX</ion-option>
     </ion-select>
   </ion-item>
-  
+  <div class="jdi-tabs">
+    <div class="jdi-tab selected-jdi-tab">Weather</div>
+    <div class="jdi-tab" tappable (click)="changeTab('comfort')">Confort</div>
+    <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
+  </div>
   <div class="day-temprerature" tappable (click)="viewWeatherDayDetail({item:'yesterday'})"></div>
   <div class="day-temprerature" tappable (click)="viewClimateDayDetail({item:'yesterday'})" ></div>
   <div class="day-temprerature"></div>
