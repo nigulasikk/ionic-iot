@@ -1,0 +1,23 @@
+day-column {
+  text-align: center;
+  .column-container{
+    display: inline-block;
+    margin-left:65px;
+    height: 400px;
+    position: relative;
+  }
+  .day-temprerature{
+    margin:15px auto;
+    height: 200px;
+    width:34px;
+    background: linear-gradient(to bottom, rgb(65,154,245) , rgb(88,199,204));
+    display: inline-block;
+    border-radius: 25px;
+  }
+  .happen-time{
+    position: absolute;
+    bottom:0;
+    border-top:1px solid white;
+    padding-top:8px;
+  }
+}

@@ -2,10 +2,40 @@ footer {
    #footer{
     position: fixed;
     bottom:20px;
+    text-align: center;
   }
   #footer div{
     width:150px;
+    margin-left:10px;
     display: inline-block;
+    padding:10px 20px;
     border:1px solid black;
+    background: rgb(67,67,67);
+    position: relative;
   }
+  .left-label{
+    display: inline-block;
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+    line-height: 20px;
+    background: white;
+    color:blue;
+    position: absolute;
+    left:-5px;
+    top:-5px;
+  }
+  .right-label{
+    display: inline-block;
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+    line-height: 20px;
+    background: white;
+    color:blue;
+    position: absolute;
+    right:-5px;
+    top:-5px;
+  }
+
 }

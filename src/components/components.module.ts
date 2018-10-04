@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { FooterComponent } from './footer/footer';
+import { DayColumnComponent } from './day-column/day-column';
 @NgModule({
-	declarations: [FooterComponent],
+	declarations: [FooterComponent,
+    DayColumnComponent],
 	imports: [],
-	exports: [FooterComponent]
+	exports: [FooterComponent,
+    DayColumnComponent]
 })
 export class ComponentsModule {}

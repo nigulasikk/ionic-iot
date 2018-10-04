@@ -30,9 +30,9 @@
     <div class="jdi-tab" tappable (click)="changeTab('comfort')">Confort</div>
     <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
   </div>
-  <div class="day-temprerature" tappable (click)="viewWeatherDayDetail({item:'yesterday'})"></div>
-  <div class="day-temprerature" tappable (click)="viewClimateDayDetail({item:'yesterday'})" ></div>
-  <div class="day-temprerature"></div>
+  <day-column></day-column>
+  <day-column></day-column>
+  <day-column></day-column>
  <footer ></footer>
 
 </ion-content>
