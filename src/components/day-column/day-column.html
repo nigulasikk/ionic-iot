@@ -1,9 +1,29 @@
 <!-- Generated template for the DayColumnComponent component -->
 <span>
   <div class="column-container">
-      <div class="top-temp">25℃</div> 
+     <div class="top-temp">25℃</div> 
      <div class="day-temprerature" tappable (click)="viewWeatherDayDetail({item:'yesterday'})"></div>
-     <div class="top-temp">14℃</div> 
+     <div class="top-temp">15℃</div> 
      <div class="happen-time">yesterday</div>
   </div>
 </span>
+
+<span>
+  <div class="column-container">
+     <div class="top-temp">22℃</div> 
+     <!-- 动态style规则：  1摄氏度=20px -->
+     <div style="height: 200px;margin-top:60px;" class="day-temprerature" tappable (click)="viewWeatherDayDetail({item:'yesterday'})"></div>
+     <div class="top-temp">12℃</div> 
+     <div class="happen-time">today</div>
+  </div>
+</span>
+
+<span>
+  <div class="column-container">
+     <div class="top-temp">25℃</div> 
+     <div class="day-temprerature" tappable (click)="viewWeatherDayDetail({item:'yesterday'})"></div>
+     <div class="top-temp">15℃</div> 
+     <div class="happen-time">tomorrow</div>
+  </div>
+</span>
+

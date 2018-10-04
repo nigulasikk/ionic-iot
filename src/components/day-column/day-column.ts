@@ -16,7 +16,6 @@ export class DayColumnComponent {
   text: string;
 
   constructor(public navCtrl: NavController) {
-    console.log('Hello DayColumnComponent Component');
     this.text = 'Hello World';
   }
   viewWeatherDayDetail(){

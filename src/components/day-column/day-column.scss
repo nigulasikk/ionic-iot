@@ -2,9 +2,10 @@ day-column {
   text-align: center;
   .column-container{
     display: inline-block;
-    margin-left:65px;
     height: 400px;
     position: relative;
+    width:110px;
+    vertical-align: top;
   }
   .day-temprerature{
     margin:15px auto;
@@ -15,8 +16,10 @@ day-column {
     border-radius: 25px;
   }
   .happen-time{
+    width:65px;
     position: absolute;
     bottom:0;
+    left:18px;
     border-top:1px solid white;
     padding-top:8px;
   }
