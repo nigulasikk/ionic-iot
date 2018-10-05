@@ -15,7 +15,7 @@ import * as echarts from 'echarts';
   templateUrl: 'equipment.html',
 })
 export class EquipmentPage {
-
+  city : string= '1';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -39,5 +39,15 @@ export class EquipmentPage {
 
         myChart.setOption(optionchart);
 
+  }
+   // 切换tab
+  changeTab(tabname){
+    if ( tabname === 'comfort') {
+      this.navCtrl.push('ComfortPage', {});
+    } else  if ( tabname === 'weather'){
+      this.navCtrl.push('WeatherPage', {});
+    } else  if ( tabname === 'equipment'){
+      this.navCtrl.push('EquipmentPage', {});
+    }
   }
 }

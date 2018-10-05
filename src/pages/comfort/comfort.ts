@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'comfort.html',
 })
 export class ComfortPage {
+  city : string= '1';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

@@ -1,0 +1,41 @@
+confort-chart {
+  .one-floor{
+    margin-top:18px;
+  }
+  .floor-name{
+    display: inline-block;
+    width:80px;
+  }
+  .tmp-distance{
+    vertical-align: top;
+    display: inline-block;
+    height: 20px;
+    border-radius:10px;
+    position: relative;
+  }
+  .turn-warm{
+    background: orange;
+  }
+  .turn-cold{
+    background: rgb(89,202,250);
+  }
+  .warm-arr:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background:orange;
+    right:0;
+  }
+   .cold-arr:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background: rgb(89,202,250);
+    left:0;
+  }
+
+}

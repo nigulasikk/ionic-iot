@@ -13,5 +13,22 @@
 </ion-header> -->
 
 <ion-content padding>
+   <div class="personinfo">
+    <div class="pname">Adam</div>
+    <div class="company">ABC CROP.</div>
+  </div>
+  <ion-item class="city">
+    <ion-select class="city-drop-down"  [(ngModel)]="city" interface="popover">
+      <ion-option value="1" >Bacon</ion-option>
+      <ion-option value="2">LOSTANGLE</ion-option>
+      <ion-option value="3">xxxxXXX</ion-option>
+    </ion-select>
+  </ion-item>
+  <div class="jdi-tabs">
+    <div class="jdi-tab"  (click)="changeTab('weather')">Weather</div>
+    <div class="jdi-tab" tappable (click)="changeTab('comfort')">Confort</div>
+    <div class="jdi-tab selected-jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
+  </div>
   <div id="chart"></div>
+  <footer ></footer>
 </ion-content>
