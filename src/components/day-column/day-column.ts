@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
+ * 动态style规则： height属性 1摄氏度=20px ，margin-top属性 里40度 差的温度/ 最高温度开始计算
  */
 @Component({
   selector: 'day-column',
