@@ -38,6 +38,5 @@ export class WeatherPage {
     } else  if ( tabname === 'equipment'){
       this.navCtrl.push('EquipmentPage', {});
     }
-
   }
 }

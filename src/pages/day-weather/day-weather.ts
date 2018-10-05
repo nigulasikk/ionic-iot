@@ -15,6 +15,7 @@ import * as echarts from 'echarts';
   templateUrl: 'day-weather.html',
 })
 export class DayWeatherPage {
+  city : string= '1';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -22,21 +23,33 @@ export class DayWeatherPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad DayWeatherPage');
     const ec = echarts as any;
-        var myChart = ec.init(document.getElementById('chart'));
-        var optionchart = {
-            series: {
-                type: 'pie',
-                data: [{
-                    name: 'A', value: 15
-                }, {
-                    name: 'B', value: 20
-                }, {
-                    name: 'C', value: 15
-                }]
-            }
-        };
-        myChart.setOption(optionchart);
+      var myChart = ec.init(document.getElementById('chart'));
+      var optionchart = {
+          xAxis: {
+              type: 'category',
+              data: ['1', '6', '12', '18', '24']
+          },
+          yAxis: {
+              type: 'value'
+          },
+          series: [{
+              data: [820, 932, 901, 934, 1290],
+              type: 'line'
+          }]
+      };
 
+      myChart.setOption(optionchart);
+
+  }
+  // 切换tab
+  changeTab(tabname){
+    if ( tabname === 'comfort') {
+      this.navCtrl.push('ComfortPage', {});
+    } else  if ( tabname === 'weather'){
+      this.navCtrl.push('WeatherPage', {});
+    } else  if ( tabname === 'equipment'){
+      this.navCtrl.push('EquipmentPage', {});
+    }
   }
 
 }

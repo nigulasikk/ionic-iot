@@ -15,7 +15,41 @@ $font-path: "../assets/fonts";
 $text-color:        #ffffff;
 $background-color:  rgb(33,33,33);
 
-
+// 头部样式
+.ion-page .city{
+  display: inline-block;
+  float: right;
+  width:180px;
+  margin-left:20px;
+}
+.city-drop-down{
+  width:100%;
+  max-width: 100%;
+}
+.personinfo{
+  display: inline-block;
+  .pname{
+    font-size: 15px;
+  }
+  .company{
+    font-size: 17px;
+  }
+}
+.jdi-tabs{
+  margin:40px auto;
+  .jdi-tab{
+    display: inline-block;
+    width:100px;
+   
+    margin-left:10px;
+    text-align: center;
+    padding:4px 5px;
+  }
+  .selected-jdi-tab{
+     border: 1px solid white;
+     border-radius: 8px;
+  }
+}
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
