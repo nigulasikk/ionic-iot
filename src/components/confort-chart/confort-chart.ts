@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 /**
  * Generated class for the ConfortChartComponent component.
@@ -12,7 +13,9 @@ import { Component } from '@angular/core';
 })
 export class ConfortChartComponent {
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
   }
-
+  viewFloor(){
+    this.navCtrl.push('ConfortFloorPage', {});
+  }
 }

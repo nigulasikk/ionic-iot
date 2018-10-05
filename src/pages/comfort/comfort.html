@@ -25,15 +25,17 @@
   </ion-item>
   <div class="jdi-tabs">
     <div class="jdi-tab"  (click)="changeTab('weather')">Weather</div>
-    <div class="jdi-tab" tappable (click)="changeTab('comfort')">Confort</div>
-    <div class="jdi-tab selected-jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
+    <div class="jdi-tab selected-jdi-tab" tappable (click)="changeTab('comfort')">Comfort</div>
+    <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
   </div>
   <ion-slides class="iot-slide">
     <ion-slide>
+      <div class="past-time">Past 15 min</div>
       <confort-chart></confort-chart>
     </ion-slide>
     <ion-slide>
-      <h1>湿度</h1>
+      <div class="past-time">Past 15 min</div>
+      <confort-chart></confort-chart>
     </ion-slide>
     
   </ion-slides>
