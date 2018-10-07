@@ -14,7 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'confort-photo.html',
 })
 export class ConfortPhotoPage {
-
+  city : string= '1';
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

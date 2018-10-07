@@ -51,5 +51,9 @@ export class ConfortFloorPage {
       this.navCtrl.push('EquipmentPage', {});
     }
   }
+  // 跳转到 传感器详情页面
+  goToComfortPhoto (){
+    this.navCtrl.push('ConfortPhotoPage', {});
+  }
 
 }
