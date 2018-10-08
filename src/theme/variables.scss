@@ -14,7 +14,9 @@ $font-path: "../assets/fonts";
 
 $text-color:        #ffffff;
 $background-color:  rgb(33,33,33);
-
+body .item-ios.item-block .item-inner{
+  border-bottom: none;
+}
 // 头部样式
 .ion-page .city{
   display: inline-block;
