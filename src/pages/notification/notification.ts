@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'notification.html',
 })
 export class NotificationPage {
+  city : string= '1';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -21,5 +22,14 @@ export class NotificationPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad NotificationPage');
   }
-
+  // 切换tab
+  changeTab(tabname){
+    if ( tabname === 'comfort') {
+      this.navCtrl.push('ComfortPage', {});
+    } else  if ( tabname === 'weather'){
+      this.navCtrl.push('WeatherPage', {});
+    } else  if ( tabname === 'equipment'){
+      this.navCtrl.push('EquipmentPage', {});
+    }
+  }
 }
