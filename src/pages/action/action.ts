@@ -26,6 +26,9 @@ export class ActionPage {
   getItems(e){
     console.log(e);
   }
+  goBack() {
+    this.navCtrl.pop();
+  }
   // 切换tab
   changeTab(tabname){
     if ( tabname === 'comfort') {

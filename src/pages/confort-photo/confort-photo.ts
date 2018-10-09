@@ -32,5 +32,8 @@ export class ConfortPhotoPage {
       this.navCtrl.push('EquipmentPage', {});
     }
   }
+  goBack() {
+    this.navCtrl.pop();
+  }
 
 }

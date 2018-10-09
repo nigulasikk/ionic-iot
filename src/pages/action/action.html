@@ -17,7 +17,7 @@
     <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
   </div>
   <div class="an-bar-container">
-    <span class="back">
+    <span class="back" (click)="goBack()">
       &lt; &nbsp;Back
     </span>
     <ion-searchbar class="an-searchbar" (ionInput)="getItems($event)"></ion-searchbar>
