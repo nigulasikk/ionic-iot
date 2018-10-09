@@ -15,11 +15,32 @@ import * as echarts from 'echarts';
   templateUrl: 'confort-floor.html',
 })
 export class ConfortFloorPage {
+  legendShow : boolean = false;
   city : string= '1';
+
+  sensors : any[] = [
+    {isEdit:false,value:'1',isChecked:true},
+    {isEdit:false,value:'2',isChecked:false},
+    {isEdit:false,value:'3',isChecked:true},
+  ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  toggleLegend() {
+    this.legendShow = !this.legendShow;
+  }
+  inputChange(item,value) {
+    console.log(value);
+    item.value = value;
+  }
+  edit(item){
+    console.log(item);
+    item.isEdit = true;
+  }
+  save(item){
+    item.isEdit = false;
+    console.log(this.sensors);
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad DayWeatherPage');
     const ec = echarts as any;

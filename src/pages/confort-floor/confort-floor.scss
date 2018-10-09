@@ -5,11 +5,7 @@ page-confort-floor {
     position: relative;
     width:100px;
     margin-left:200px;
-    &:hover .legend-wraper{
-      display: block;
-    }
     .legend-wraper{
-      display: none;
       position: absolute;
       top:20px;
       right:0;

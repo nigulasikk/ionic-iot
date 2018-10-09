@@ -23,32 +23,21 @@
     <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
   </div>
   <div class="legend">
-    Sensor Legend
-    <div class="legend-wraper">
-      <div class="item">
-        <ion-checkbox class="inline-item" checked="true"></ion-checkbox>
-        <div class="inline-item legend-color legend-blue"></div>
-        <ion-label class="inline-item">Daenerys</ion-label>
-        <span>edit</span>
-        <span tappable (click)="goToComfortPhoto()">pic</span>
+      <span (click)="toggleLegend()">Sensor Legend</span>
+      <div class="legend-wraper" *ngIf="legendShow">
+        <div class="item" *ngFor="let iteminfo of sensors">
+          <ion-checkbox class="inline-item"  [(ngModel)]="iteminfo.isChecked" ></ion-checkbox>
+          <div class="inline-item legend-color legend-blue"></div>
+          <ion-label style="width: 100px;" *ngIf="!iteminfo.isEdit" class="inline-item">{{iteminfo.value}}</ion-label>
+          <ion-input *ngIf="iteminfo.isEdit" (input)="inputChange(iteminfo,$event.target.value)"   style="width: 100px;" class="inline-item" placeholder="Text Input"></ion-input>
+          <span *ngIf="!iteminfo.isEdit" tappable (click)="edit(iteminfo)">edit</span>
+          <span *ngIf="iteminfo.isEdit" tappable (click)="save(iteminfo)">save</span>
+          <span tappable (click)="goToComfortPhoto()">pic</span>
+        </div>
       </div>
-       <div class="item">
-        <ion-checkbox class="inline-item" ></ion-checkbox>
-        <div class="inline-item legend-color legend-green"></div>
-        <ion-label class="inline-item">xxxx2</ion-label>
-        <span>edit</span>
-        <span tappable (click)="goToComfortPhoto()">pic</span>
-      </div>
-       <div class="item">
-        <ion-checkbox class="inline-item" checked="true"></ion-checkbox>
-        <div class="inline-item legend-color legend-yellow"></div>
-        <ion-label class="inline-item">ccc2</ion-label>
-        <span>edit</span>
-        <span tappable (click)="goToComfortPhoto()">pic</span>
-      </div>
-
     </div>
-  </div>
+    
+
   <div id="floor-chart"></div>
   <footer ></footer>
 </ion-content>
