@@ -1,4 +1,18 @@
 page-notification {
+  .weekday{
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid white;
+    margin-right: 6px;
+  }
+  .selected-weekday{
+    background: white;
+    color:black;
+  }
   .day-tag{
     border:1px solid white;
     padding:2px 15px;
@@ -20,9 +34,17 @@ page-notification {
       width: 120px;
     }
     .add{
-      font-size: 30px;
+      font-size: 28px;
+      font-weight: bolder;
       float: right;
       display: inline-block;
+      width:40px;
+      height: 40px;
+      background: white;
+      color:rgb(90,143,220);
+      text-align: center;
+      line-height: 40px;
+      border-radius: 7px;
     }
   }
   .an-item{
@@ -48,6 +70,7 @@ page-notification {
     overflow: hidden;
     white-space: nowrap;
     text-overflow:ellipsis;
+    margin-top:6px;
   }
   .list-ios .item-block .item-inner{
     border-bottom: none;
