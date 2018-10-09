@@ -22,6 +22,9 @@ export class NotificationPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad NotificationPage');
   }
+  goToAdd(){
+      this.navCtrl.push('NotificationAddPage', {});
+  }
   // 切换tab
   changeTab(tabname){
     if ( tabname === 'comfort') {

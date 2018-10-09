@@ -1,18 +1,92 @@
-<!--
-  Generated template for the NotificationAddPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>notificationAdd</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
 
 <ion-content padding>
-
+   <div class="personinfo">
+    <div class="pname">Adam</div>
+    <div class="company">ABC CROP.</div>
+  </div>
+  <ion-item class="city">
+    <ion-select class="city-drop-down"  [(ngModel)]="city" interface="popover">
+      <ion-option value="1" >Bacon</ion-option>
+      <ion-option value="2">LOSTANGLE</ion-option>
+      <ion-option value="3">xxxxXXX</ion-option>
+    </ion-select>
+  </ion-item>
+  <div class="jdi-tabs">
+    <div class="jdi-tab"  (click)="changeTab('weather')">Weather</div>
+    <div class="jdi-tab" tappable (click)="changeTab('comfort')">Confort</div>
+    <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
+  </div>
+  <div class="an-bar-container">
+    <span class="back" (click)="goBack()">
+      &lt; &nbsp;Back
+    </span>
+    <button ion-button class="customize-btn">Customize</button>
+  </div>
+  <div class="t-comfort">
+      <ion-item class="t-comfort-select-wrap">
+        <ion-select class="t-comfort-select"  [(ngModel)]="tenant" interface="popover">
+          <ion-option value="1" >Tenant Comfort</ion-option>
+          <ion-option value="2">Tenant Comfort2</ion-option>
+          <ion-option value="3">Tenant Comfort3</ion-option>
+        </ion-select>
+      </ion-item>
+  </div>
+  <ion-list>
+      <ion-item-sliding  #item>
+        <ion-item class="condition-item">
+          temperture
+          <ion-item class="big-or-small-wrap">
+            <ion-select class="big-or-small-select"  [(ngModel)]="detailValue" interface="popover">
+              <ion-option value="10">10</ion-option>
+              <ion-option value="20"> 20</ion-option>
+              <ion-option value="30"> 30 </ion-option>
+            </ion-select>
+          </ion-item>
+           <ion-item class="big-or-small-wrap">
+            <ion-select class="big-or-small-select"  [(ngModel)]="bigOrSmall" interface="popover">
+              <ion-option value="1" > > </ion-option>
+              <ion-option value="2"> = </ion-option>
+              <ion-option value="3"> < </ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button  color="default" >
+              add
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+      <ion-item-sliding  #item>
+        <ion-item class="condition-item">
+          <ion-item class="field-select-wrap">
+            <ion-select class="field-select"   [(ngModel)]="conditionField" interface="popover">
+              <ion-option value="temperature">temp</ion-option>
+              <ion-option value="20"> floor1 temp</ion-option>
+              <ion-option value="30"> 30 </ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item class="big-or-small-wrap">
+            <ion-select class="big-or-small-select"  [(ngModel)]="detailValue2" interface="popover">
+              <ion-option value="10">10</ion-option>
+              <ion-option value="20"> 20</ion-option>
+              <ion-option value="30"> 30 </ion-option>
+            </ion-select>
+          </ion-item>
+           <ion-item class="big-or-small-wrap">
+            <ion-select class="big-or-small-select"  [(ngModel)]="bigOrSmall2" interface="popover">
+              <ion-option value="1" > > </ion-option>
+              <ion-option value="2"> = </ion-option>
+              <ion-option value="3"> < </ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button  color="default" >
+              add
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+  </ion-list>
+  <footer ></footer>
+  
 </ion-content>

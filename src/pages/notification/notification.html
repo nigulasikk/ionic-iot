@@ -21,7 +21,7 @@
       Manager
     </span>
     <ion-searchbar class="an-searchbar" (ionInput)="getItems($event)"></ion-searchbar>
-    <span class="add"> + </span>
+    <span class="add" (click)="goToAdd()"> + </span>
   
   </div>
 
@@ -40,16 +40,7 @@
         </div>
         <div class="an-content">outside temprature > 30</div>
       </ion-item>
-      <ion-item-options side="right">
-        <button ion-button  color="danger" (click)="unread(item)">
-            <ion-select class="city-drop-down" interface="popover" placeholder="dismiss" [(ngModel)]="dismissTime">
-              <ion-option value="0" >dismiss</ion-option>
-              <ion-option value="1" >   1 h   </ion-option>
-              <ion-option value="2">2 h</ion-option>
-              <ion-option value="3">3 h</ion-option>
-            </ion-select>
-        </button>
-      </ion-item-options>
+      
     </ion-item-sliding>
     
     <ion-item-sliding #item>
@@ -65,16 +56,7 @@
         </div>
         <div class="an-content">outside temprature > 30</div>
       </ion-item>
-      <ion-item-options side="right">
-        <button ion-button  color="danger" (click)="unread(item)">
-            <ion-select class="city-drop-down" interface="popover" placeholder="dismiss" [(ngModel)]="dismissTime">
-              <ion-option value="0" >dismiss</ion-option>
-              <ion-option value="1" >1 h</ion-option>
-              <ion-option value="2">2 h</ion-option>
-              <ion-option value="3">3 h</ion-option>
-            </ion-select>
-        </button>
-      </ion-item-options>
+      
     </ion-item-sliding>
     
     <ion-item-sliding #item>
@@ -90,16 +72,7 @@
         </div>
         <div class="an-content">outside temprature > 30</div>
       </ion-item>
-      <ion-item-options side="right">
-        <button ion-button  color="danger" (click)="unread(item)">
-            <ion-select class="city-drop-down" interface="popover" placeholder="dismiss" [(ngModel)]="dismissTime">
-              <ion-option value="0" >dismiss</ion-option>
-              <ion-option value="1" >1 h</ion-option>
-              <ion-option value="2">2 h</ion-option>
-              <ion-option value="3">3 h</ion-option>
-            </ion-select>
-        </button>
-      </ion-item-options>
+      
     </ion-item-sliding>
 
   </ion-list>
@@ -119,16 +92,7 @@
         </div>
         <div class="an-content">outside temprature > 30</div>
       </ion-item>
-      <ion-item-options side="right">
-        <button ion-button  color="danger" (click)="unread(item)">
-            <ion-select class="city-drop-down" interface="popover" placeholder="dismiss" [(ngModel)]="dismissTime">
-              <ion-option value="0" >dismiss</ion-option>
-              <ion-option value="1" >1 h</ion-option>
-              <ion-option value="2">2 h</ion-option>
-              <ion-option value="3">3 h</ion-option>
-            </ion-select>
-        </button>
-      </ion-item-options>
+      
     </ion-item-sliding>
     
     <ion-item-sliding #item>
@@ -144,16 +108,7 @@
         </div>
         <div class="an-content">outside temprature > 30</div>
       </ion-item>
-      <ion-item-options side="right">
-        <button ion-button  color="danger" (click)="unread(item)">
-            <ion-select class="city-drop-down" interface="popover" placeholder="dismiss" [(ngModel)]="dismissTime">
-              <ion-option value="0" >dismiss</ion-option>
-              <ion-option value="1" >1 h</ion-option>
-              <ion-option value="2">2 h</ion-option>
-              <ion-option value="3">3 h</ion-option>
-            </ion-select>
-        </button>
-      </ion-item-options>
+      
     </ion-item-sliding>
 
   </ion-list>

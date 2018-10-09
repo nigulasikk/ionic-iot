@@ -14,6 +14,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'notification-add.html',
 })
 export class NotificationAddPage {
+  city : string= '1';
+  tenant : string= '1';
+  bigOrSmall : string= '1';
+  bigOrSmall2 : string= '1';
+  detailValue : string= '10';
+  detailValue2 : string= '10';
+  conditionField : string= 'temperature';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
