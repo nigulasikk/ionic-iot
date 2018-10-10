@@ -14,12 +14,30 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'notification-manage.html',
 })
 export class NotificationManagePage {
+  city : string= '1';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad NotificationManagePage');
+    console.log('ionViewDidLoad NotificationAddCustomPage');
+  }
+  goToAdd(){
+      this.navCtrl.push('NotificationAddPage', {});
+  }
+   // 返回
+  goBack() {
+    this.navCtrl.pop();
+  }
+   // 切换tab
+  changeTab(tabname){
+    if ( tabname === 'comfort') {
+      this.navCtrl.push('ComfortPage', {});
+    } else  if ( tabname === 'weather'){
+      this.navCtrl.push('WeatherPage', {});
+    } else  if ( tabname === 'equipment'){
+      this.navCtrl.push('EquipmentPage', {});
+    }
   }
 
 }

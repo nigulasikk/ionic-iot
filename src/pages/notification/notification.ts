@@ -25,6 +25,10 @@ export class NotificationPage {
   goToAdd(){
       this.navCtrl.push('NotificationAddPage', {});
   }
+  goToManager(){
+      this.navCtrl.push('NotificationManagePage', {});
+  }
+  
   // 切换tab
   changeTab(tabname){
     if ( tabname === 'comfort') {

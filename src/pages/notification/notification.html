@@ -17,11 +17,10 @@
     <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
   </div>
   <div class="an-bar-container">
-    <span class="back">
+    <span class="back" (click)="goToManager()">
       Manager
     </span>
     <ion-searchbar class="an-searchbar" (ionInput)="getItems($event)"></ion-searchbar>
-    <span class="add" (click)="goToAdd()"> + </span>
   
   </div>
 
