@@ -1,3 +1,105 @@
 page-notification-add-custom {
+  .bar-container{
+  }
+  .help-btn{
+    float: right;
+    background: transparent;
+    color:red;
+    border:1px solid red;
+    height: 24px;
+    font-size: 12px;
+  }
+  .duration-wraper{
+    margin-top:20px;
+    .duration-select-wrap{
+        vertical-align: middle;
+        display: inline-block;
+        width:170px;
+        height: 18px;
+        margin:20px auto;
+        background: black;
+        border-radius: 8px;
+    }
+   
+    .duration-select{
+        background: black;
+        width: 100%;
+        max-width: 100%;
+    }
+  }
+  .weekday-containers{
+    text-align: center;
+  }
+  .weekday{
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    background: white;
+    border: 1px solid white;
+    margin-right: 12px;
+    color:black;
 
+  }
+  .selected-weekday{
+    color:black;
+    background: rgb(90,143,220);
+    border: 1px solid rgb(90,143,220);
+
+  }
+   .condition-item{
+    font-size:18px;
+    vertical-align: bottom;
+  }
+  .big-or-small-select{
+    width: 100%;
+    max-width: 100%;
+    background: black;
+    border-radius: 8px;
+  }
+  .big-or-small-wrap{
+    display: inline-block;
+    width:80px;
+    float: right;
+    margin-right: 5px;
+  }
+  .field-select-wrap{
+    display: inline-block;
+    width:170px;
+  }
+  .field-select{
+    width: 100%;
+    max-width: 100%;
+    background: black;
+    border-radius: 8px;
+  }
+  .if{
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .and{
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    padding:0 20px;
+    border-radius: 12px;
+    background: rgb(108,108,108);
+    margin:10px 0;
+  }
+  .btns-container{
+    text-align: center;
+    margin-top:30px;
+    position: fixed;
+    bottom:80px;
+    left:0;
+    right:0;
+  }
+  .add-btn{
+    margin-left:40px;
+  }
 }

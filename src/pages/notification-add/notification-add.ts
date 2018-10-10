@@ -24,6 +24,11 @@ export class NotificationAddPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+  // 自定义
+  goToCustomize() {
+    this.navCtrl.push('NotificationAddCustomPage', {});
+  }
+  // 返回
   goBack() {
     this.navCtrl.pop();
   }
