@@ -1,17 +1,26 @@
 footer {
    #footer{
     position: fixed;
-    bottom:20px;
+    bottom:0px;
+    left: 0;
+    right: 0;
     text-align: center;
+    background: #212121;
+    width: 100%;
+    z-index: 23;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
   #footer div{
     width:150px;
-    margin-left:10px;
     display: inline-block;
     padding:10px 20px;
     border:1px solid black;
     background: rgb(67,67,67);
     position: relative;
+  }
+  .action-btn{
+    margin-left:10px;
   }
   .left-label{
     display: inline-block;
