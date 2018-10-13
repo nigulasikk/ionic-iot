@@ -3,22 +3,33 @@ page-notification-add {
     border-bottom: none;
     background: rgb(108,108,108);
     border-radius: 10px;
-    margin-top:10px;
+    margin-top:12px;
   }
   .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
     border-bottom: none;
 
   }
+  .an-bar-container{
+    height: 48px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    .back{
+      font-size: 14px;
+      .arr{
+        font-size: 20px;
+      }
+    }
+  }
   .customize-btn{
     height: 30px;
-    width:100px;
+    width:74px;
     float: right;
+    font-size: 12px;
   }
   .t-comfort-select-wrap{
       display: block;
-      width:300px;
+      width:100%;
       height: 30px;
-      margin:30px auto;
+      margin:30px auto 0 auto;
       background: rgb(219,117,65);
       border-radius: 8px;
   }
@@ -30,7 +41,18 @@ page-notification-add {
   }
   .condition-item{
     font-size:18px;
-    vertical-align: bottom;
+    vertical-align: middle;
+    .c-value{
+      position: relative;
+      top:24px;
+      font-size: 14px;
+    }
+    .label-ios{
+      margin:0;
+    }
+    .select-ios {
+          padding: 5px 8px 5px 16px;
+      }
   }
   .big-or-small-select{
     width: 100%;
