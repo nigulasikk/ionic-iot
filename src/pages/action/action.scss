@@ -1,18 +1,23 @@
 page-action {
   .day-tag{
-    border:1px solid white;
     padding:2px 15px;
-    border-radius: 8px;
-    display: inline-block;
-    margin:0 8px 8px 0;
+    margin:14px 0 12px 0;
+    color:white;
+    background: rgba(255,255,255,.5);
+    border-radius: 3px;
   }
   .item-wrapper{
     margin-top:10px;
   }
+
   .an-bar-container{
-    height: 45px;
+    height: 48px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
     .back{
-      font-size: 16px;
+      font-size: 14px;
+      .arr{
+        font-size: 20px;
+      }
     }
     .an-searchbar{
       float: right;
@@ -21,16 +26,38 @@ page-action {
     }
     .an-filter-wraper{
       display: inline-block;
+      vertical-align: top;
       float: right;
       width:120px;
       .an-filter{
         width:100%;
         max-width: 100%;
+
+      }
+    }
+    .add{
+      float: right;
+      display: inline-block;
+      width:36px;
+      height: 36px;
+      background: white;
+      color:rgb(90,143,220);
+      text-align: center;
+      line-height: 36px;
+      border-radius: 6px;
+      .setting-img{
+        display: inline-block;
+        width:20px;
+        line-height: 36px;
+        vertical-align: middle;
       }
     }
   }
-  .an-item{
+   .an-item{
     // margin-top:20px;
+    .label-ios {
+        margin: 3px 8px 3px 0;
+    }
   }
   .an-item-red{
     border-left:6px solid #ff6969;
@@ -42,13 +69,17 @@ page-action {
     border-left:6px solid white;
   }
   .an-title{
-    color:rgb(163,163,163);
+    color:white;
+    font-size: 16px;
   }
   .an-content{
-    font-size: 14px;
+    font-size: 16px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow:ellipsis;
+  }
+  .an-filter-wraper.item-block{
+    min-height: auto;
   }
   .list-ios .item-block .item-inner{
     border-bottom: none;
