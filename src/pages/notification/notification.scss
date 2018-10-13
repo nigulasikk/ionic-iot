@@ -37,6 +37,23 @@ page-notification {
       display: inline-block;
       width: 120px;
     }
+    .add{
+      float: right;
+      display: inline-block;
+      width:36px;
+      height: 36px;
+      background: white;
+      color:rgb(90,143,220);
+      text-align: center;
+      line-height: 36px;
+      border-radius: 6px;
+      .setting-img{
+        display: inline-block;
+        width:20px;
+        line-height: 36px;
+        vertical-align: middle;
+      }
+    }
   }
   .an-item{
     // margin-top:20px;
