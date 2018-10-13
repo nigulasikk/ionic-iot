@@ -8,6 +8,7 @@ page-notification-manage {
     display: inline-block;
     border: 1px solid white;
     margin-right: 6px;
+    font-size: 14px;
   }
   .selected-weekday{
     background: white;
@@ -27,6 +28,9 @@ page-notification-manage {
     height: 45px;
     .back{
       font-size: 16px;
+      .arr{
+        font-size: 20px;
+      }
     }
     .an-searchbar{
       float: right;
@@ -34,17 +38,23 @@ page-notification-manage {
       width: 120px;
     }
     .add{
-      font-size: 28px;
-      font-weight: bolder;
       float: right;
+      font-size:20px;
+      font-weight: bolder;
       display: inline-block;
-      width:40px;
-      height: 40px;
+      width:36px;
+      height: 36px;
       background: white;
       color:rgb(90,143,220);
       text-align: center;
-      line-height: 40px;
-      border-radius: 7px;
+      line-height: 36px;
+      border-radius: 6px;
+      .setting-img{
+        display: inline-block;
+        width:20px;
+        line-height: 36px;
+        vertical-align: middle;
+      }
     }
   }
   .an-item{
@@ -66,11 +76,11 @@ page-notification-manage {
     text-overflow:ellipsis;
   }
   .an-content{
-    font-size: 14px;
+    font-size: 16px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow:ellipsis;
-    margin-top:6px;
+    margin-top:8px;
   }
   .list-ios .item-block .item-inner{
     border-bottom: none;
