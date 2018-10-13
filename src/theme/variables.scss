@@ -31,21 +31,26 @@ body .item-ios.item-block .item-inner{
 .personinfo{
   display: inline-block;
   .pname{
-    font-size: 15px;
+    font-size: 18px;
   }
   .company{
-    font-size: 17px;
+    font-size: 14px;
+    color: #9B9B9B;
   }
 }
 .jdi-tabs{
-  margin:40px auto;
+  margin:21px auto 16px auto;
+  border-bottom:2px solid;
+  padding-bottom: 18px;
+  border-image: linear-gradient( to right, rgb(37,37,37),rgb(72,72,72),rgb(37,37,37)) 30 30;
   .jdi-tab{
     display: inline-block;
     width:100px;
-   
-    margin-left:10px;
+    margin-right:10px;
     text-align: center;
     padding:4px 5px;
+    font-size: 16px;
+    color: #9B9B9B;
   }
   .selected-jdi-tab{
      border: 1px solid white;
