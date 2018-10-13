@@ -1,4 +1,19 @@
 page-notification-add {
+  .add-btn{
+    font-size: 18px;
+    background: white;
+    min-height: 64px !important;
+    max-height: 64px !important;
+    width:100px;
+    height: 64px;
+    color:black;
+    vertical-align: bottom;
+    position: relative;
+    margin-top: 12px!important;
+    margin-left: 12px!important;
+    border-radius: 10px!important;
+    box-shadow: 0 1px 5px 0 rgba(55,52,52,0.50);
+  }
   .list-ios > .item-block, .list-ios > .item-wrapper .item-block{
     border-bottom: none;
     background: rgb(108,108,108);
@@ -51,8 +66,11 @@ page-notification-add {
       margin:0;
     }
     .select-ios {
-          padding: 5px 8px 5px 16px;
-      }
+        padding: 5px 8px 5px 16px;
+    }
+    .button-ios{
+      background: red;
+    }
   }
   .big-or-small-select{
     width: 100%;

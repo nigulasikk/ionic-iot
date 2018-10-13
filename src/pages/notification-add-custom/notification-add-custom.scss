@@ -1,24 +1,37 @@
 page-notification-add-custom {
+  
   .bar-container{
+    height: 48px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    .back{
+      font-size: 14px;
+      .arr{
+        font-size: 20px;
+      }
+    }
   }
   .help-btn{
     float: right;
     background: transparent;
     color:red;
-    border:1px solid red;
-    height: 24px;
+    border:2px solid #D0021B;
+    height: 30px;
+    width:60px;
+    text-align: center;
+    border-radius: 5px;
     font-size: 12px;
   }
   .duration-wraper{
-    margin-top:20px;
     .duration-select-wrap{
         vertical-align: middle;
         display: inline-block;
         width:170px;
-        height: 18px;
-        margin:20px auto;
+        height: 32px;
+        margin:14px auto;
         background: black;
         border-radius: 8px;
+        min-height: 32px;
+        font-size: 14px!important;
     }
    
     .duration-select{
@@ -76,9 +89,8 @@ page-notification-add-custom {
     border-radius: 8px;
   }
   .if{
-    font-size: 20px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 18px;
+    margin:10px 0 14px 0;
   }
   .and{
     display: inline-block;
@@ -99,7 +111,13 @@ page-notification-add-custom {
     left:0;
     right:0;
   }
+  .cus-btn{
+    width:116px;
+    height: 30px;
+  }
   .add-btn{
-    margin-left:40px;
+    margin-left:17px;
+    width:116px;
+    height: 30px;
   }
 }
