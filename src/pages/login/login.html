@@ -1,21 +1,26 @@
 
 <ion-content>
-  <form (submit)="doLogin()">
+  <img src="assets/img/logo.png" class="logo" width="127"  />
+
+  <form >
     <ion-list>
+      <ion-item class="username-wraper">
+        <ion-label fixed>
+          <img src="assets/img/phone.png"  width="30"  />
+        </ion-label>
+        <ion-input class="login-input" placeholder="Username" type="text" [(ngModel)]="account.username" name="username"></ion-input>
+      </ion-item>
+      <button ion-button color="primary" class="get-btn">Get</button>
 
       <ion-item>
-        <ion-label fixed>username</ion-label>
-        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+        <ion-label fixed>
+          <img src="assets/img/passwd.png"  width="30"  />
+        </ion-label>
+        <ion-input class="login-input" placeholder="Password" type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
 
-
-      <ion-item>
-        <ion-label fixed>password</ion-label>
-        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
-      </ion-item>
-
-      <div padding>
-        <button ion-button color="primary" block>login</button>
+      <div>
+        <button class="login-btn" ion-button color="primary" block>Login</button>
       </div>
 
     </ion-list>

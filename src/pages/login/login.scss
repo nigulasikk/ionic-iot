@@ -1,2 +1,51 @@
 page-login {
+  .username-wraper{
+    display: inline-block;
+    width:275px;
+    vertical-align: middle;
+  }
+  .get-btn{
+    width:75px;
+    height: 30px;
+    float: right;
+    margin-right:36px;
+    margin-top:15px;
+  }
+  .logo{
+    display: block;
+    margin:157px auto 129px auto;
+  }
+  .list-ios > .item-block:first-child {
+      border-top: none;
+  }
+  .list-ios > .item-block .item-inner .input-wrapper{
+    // border-bottom: 1px solid grey;
+  }
+  .item-ios{
+    padding-left:36px;
+  }
+  .login-input{
+    font-size: 18px!important;
+  }
+  ion-label[fixed] {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 10px;
+      -ms-flex: 0 0 100px;
+      flex: 0 0 -129px;
+      width: 30px;
+      min-width: 30px;
+      max-width: 175px;
+  }
+  .label-ios + ion-input .text-input, .label-ios + ion-textarea .text-input, .label-ios + .input + .cloned-input {
+      margin-left: 0px; 
+      // width:calc(100% - (36px / 2) - 36px);
+  }
+  .login-btn{
+    margin:36px;
+    margin-top:56px;
+    width:calc(100% - 72px );
+    background: #4A90E2;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.63);
+    border-radius: 10px;
+  }
 }
