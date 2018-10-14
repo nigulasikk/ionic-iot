@@ -1,18 +1,27 @@
 <!-- Generated template for the DayColumnComponent component -->
+
 <span>
   <div class="column-container">
-     <div class="top-temp">25℃</div> 
+    <div  style="margin-top:0px;"  class="top-temp">
+      <img src="assets/img/2.png" width="25" >
+     25℃
+    </div> 
      <div class="day-temprerature" tappable (click)="viewWeatherDayDetail({item:'yesterday'})"></div>
-     <div class="top-temp">15℃</div> 
+     <div class="top-temp">
+     15℃</div> 
      <div class="happen-time">yesterday</div>
   </div>
 </span>
 
 <span>
   <div class="column-container">
-     <div class="top-temp">22℃</div> 
-     <!-- 动态style规则： height属性 1摄氏度=20px ，margin-top属性 里40度 差的温度/ 最高温度开始计算-->
-     <div style="height: 200px;margin-top:60px;" class="day-temprerature" tappable (click)="viewWeatherDayDetail({item:'yesterday'})"></div>
+    <!-- margin-top属性 1摄氏度=20px,最高温度开始计算 -->
+     <div style="margin-top:60px;" class="top-temp">
+      <img src="assets/img/1.png" width="25" >
+      22℃
+     </div> 
+     <!-- 动态style规则： height属性 1摄氏度=20px ，-->
+     <div style="height: 200px;" class="day-temprerature" tappable (click)="viewWeatherDayDetail({item:'yesterday'})"></div>
      <div class="top-temp">12℃</div> 
      <div class="happen-time">today</div>
   </div>
@@ -20,7 +29,10 @@
 
 <span>
   <div class="column-container">
-     <div class="top-temp">25℃</div> 
+     <div  style="margin-top:0px;"  class="top-temp">
+      <img src="assets/img/3.png" width="25" >
+      25℃
+     </div> 
      <div class="day-temprerature" tappable (click)="viewWeatherDayDetail({item:'yesterday'})"></div>
      <div class="top-temp">15℃</div> 
      <div class="happen-time">tomorrow</div>
