@@ -29,6 +29,7 @@ page-notification-add {
     border-bottom: 1px solid rgba(255,255,255,.1);
     .back{
       font-size: 14px;
+      line-height: 30px;
       .arr{
         font-size: 20px;
       }
@@ -59,8 +60,8 @@ page-notification-add {
     vertical-align: middle;
     .c-value{
       position: relative;
-      top:24px;
       font-size: 14px;
+      line-height: 64px;
     }
     .label-ios{
       margin:0;
@@ -83,10 +84,12 @@ page-notification-add {
     width:80px;
     float: right;
     margin-right: 5px;
+    margin-top:7px !important;
   }
   .field-select-wrap{
     display: inline-block;
     width:140px;
+    margin-top:7px !important;
   }
   .field-select{
     width: 100%;
