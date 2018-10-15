@@ -4,9 +4,15 @@ page-comfort {
     .swiper-slide{
       .slide-zoom{
         text-align: left;
-          .past-time{
-            text-align: center;
-          }
+            .past-time{
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              color:white;
+              background: rgba(255,255,255,.5);
+              box-shadow: 0 1px 5px 0 rgba(55,52,52,0.50);
+              border-radius: 3px;
+            }
       }
     }
   }

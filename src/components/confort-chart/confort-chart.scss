@@ -1,6 +1,11 @@
 confort-chart {
+
   .one-floor{
     margin-top:18px;
+    img{
+      width:25px;
+      vertical-align: middle;
+    }
   }
   .floor-name{
     display: inline-block;
@@ -10,33 +15,35 @@ confort-chart {
     vertical-align: top;
     display: inline-block;
     height: 20px;
-    border-radius:10px;
+    border-radius:12px;
     position: relative;
   }
   .turn-warm{
-    background: orange;
+    background-image: linear-gradient(270deg, #F7DB12 17%, rgba(214,112,4,0.94) 99%);
+    box-shadow: 0 2px 3px 0 rgba(28,27,27,0.50);
   }
   .turn-cold{
-    background: rgb(89,202,250);
+    background-image: linear-gradient(90deg, #4A90E2 10%, #104B8F 100%);
+    box-shadow: 0 2px 3px 0 rgba(28,28,28,0.50), inset 0 -1px 3px 0 rgba(131,126,126,0.50);
   }
-  .warm-arr:before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    background:orange;
-    right:0;
-  }
-   .cold-arr:before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    background: rgb(89,202,250);
-    left:0;
-  }
+  // .warm-arr:before{
+  //   content: '';
+  //   position: absolute;
+  //   width: 20px;
+  //   height: 20px;
+  //   transform: rotate(45deg);
+  //   background:orange;
+  //   right:0;
+  // }
+  //  .cold-arr:before{
+  //   content: '';
+  //   position: absolute;
+  //   width: 20px;
+  //   height: 20px;
+  //   transform: rotate(45deg);
+  //   background: rgb(89,202,250);
+  //   left:0;
+  // }
   .floor-wraper{
     padding-bottom: 100px;
   }
