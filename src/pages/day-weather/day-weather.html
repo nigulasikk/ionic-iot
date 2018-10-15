@@ -22,10 +22,19 @@
     <div class="jdi-tab" tappable (click)="changeTab('comfort')">Confort</div>
     <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
   </div>
+  <div class="an-bar-container">
+    <span class="back" (click)="goBack()">
+      <span class="arr">&lt;</span> &nbsp;Back
+    </span>
+  </div>
    <ion-slides class="iot-slide">
     <ion-slide>
       <div id="chart"></div>
-      
+      <div class="weather-container">
+        <img style="left:80px;" src="assets/img/6.png" width="25" >
+        <img  style="left:150px;" src="assets/img/7.png" width="25" >
+        <img  style="left:280px;" src="assets/img/8.png" width="25" >
+      </div>
     </ion-slide>
     <ion-slide>
       <iframe src="https://www.google.com/maps?output=embed"></iframe>
