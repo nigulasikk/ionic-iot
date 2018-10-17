@@ -22,17 +22,33 @@
     <div class="jdi-tab selected-jdi-tab" tappable (click)="changeTab('comfort')">Comfort</div>
     <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
   </div>
-  <div class="legend">
+  <div class="an-bar-container">
+    <span class="back" (click)="goBack()">
+      <span class="arr">&lt;</span> &nbsp;Back
+    </span>
+    <div class="floor-name">Floor 11</div>
+  </div>
+    
+    <ion-item class="data-pick">
+      <ion-datetime displayFormat="MM DD YYYY"  [(ngModel)]="event"></ion-datetime>
+    </ion-item>
+    <div class="legend">
       <span (click)="toggleLegend()">Sensor Legend</span>
       <div class="legend-wraper" *ngIf="legendShow">
         <div class="item" *ngFor="let iteminfo of sensors">
-          <ion-checkbox class="inline-item"  [(ngModel)]="iteminfo.isChecked" ></ion-checkbox>
-          <div class="inline-item legend-color legend-blue"></div>
+          <div  class="inline-item legend-color legend-white"></div>
           <ion-label style="width: 100px;" *ngIf="!iteminfo.isEdit" class="inline-item">{{iteminfo.value}}</ion-label>
-          <ion-input *ngIf="iteminfo.isEdit" (input)="inputChange(iteminfo,$event.target.value)"   style="width: 100px;" class="inline-item" placeholder="Text Input"></ion-input>
-          <span *ngIf="!iteminfo.isEdit" tappable (click)="edit(iteminfo)">edit</span>
-          <span *ngIf="iteminfo.isEdit" tappable (click)="save(iteminfo)">save</span>
-          <span tappable (click)="goToComfortPhoto()">pic</span>
+          <ion-input *ngIf="iteminfo.isEdit" (input)="inputChange(iteminfo,$event.target.value)"   style="width: 100px;" class="inline-item input-style" placeholder="Text Input"></ion-input>
+          <span class="inline-item  item-ok" *ngIf="!iteminfo.isEdit" tappable (click)="edit(iteminfo)">
+            <img src="assets/img/edit.png" width="18">
+          </span>
+          <span class="inline-item item-ok" *ngIf="iteminfo.isEdit" tappable (click)="save(iteminfo)">
+            OK            
+          </span>
+          <span class="inline-item" tappable (click)="goToComfortPhoto()">
+            <img src="assets/img/pic.png" width="18">
+          </span>
+          <ion-checkbox class="inline-item"  [(ngModel)]="iteminfo.isChecked" ></ion-checkbox>
         </div>
       </div>
     </div>
