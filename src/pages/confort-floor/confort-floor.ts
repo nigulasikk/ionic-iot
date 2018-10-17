@@ -17,6 +17,7 @@ import * as echarts from 'echarts';
 export class ConfortFloorPage {
   legendShow : boolean = false;
   city : string= '1';
+  datetime : string= '2018-10-18';
 
   sensors : any[] = [
     {isEdit:false,value:'Sensor 1',isChecked:true,clolr:"blue"},
