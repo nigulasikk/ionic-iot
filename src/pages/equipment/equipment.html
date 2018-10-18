@@ -1,16 +1,3 @@
-<!--
-  Generated template for the EquipmentPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<!-- <ion-header>
-
-  <ion-navbar>
-    <ion-title>equipment</ion-title>
-  </ion-navbar>
-
-</ion-header> -->
 
 <ion-content padding>
    <div class="personinfo">
@@ -25,10 +12,43 @@
     </ion-select>
   </ion-item>
   <div class="jdi-tabs">
-    <div class="jdi-tab"  (click)="changeTab('weather')">Weather</div>
-    <div class="jdi-tab" tappable (click)="changeTab('comfort')">Comfort</div>
+    <div class="jdi-tab "  (click)="changeTab('weather')">Weather</div>
+    <div class="jdi-tab " tappable (click)="changeTab('comfort')">Comfort</div>
     <div class="jdi-tab selected-jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
   </div>
-  <div id="chart"></div>
+  <div  class="power">
+    Power Consumption
+  </div>
+    <ion-item class="data-pick">
+      <ion-datetime displayFormat="MM DD YYYY"  [(ngModel)]="datetime"></ion-datetime>
+    </ion-item>
+    <div class="legend">
+      <span (click)="toggleLegend()">Sensor Legend</span>
+    </div>
+     <div class="legend-wraper" *ngIf="legendShow">
+        <div class="legend-title">Legend</div>
+        <div class="item" *ngFor="let iteminfo of sensors">
+          <div  class="inline-item legend-color legend-white"></div>
+          <ion-label style="width: 100px;" *ngIf="!iteminfo.isEdit" class="inline-item">{{iteminfo.value}}</ion-label>
+          <ion-input *ngIf="iteminfo.isEdit" (input)="inputChange(iteminfo,$event.target.value)"   style="width: 100px;" class="inline-item input-style" placeholder="Text Input"></ion-input>
+          <span class="inline-item  item-ok" *ngIf="!iteminfo.isEdit" tappable (click)="edit(iteminfo)">
+            <img src="assets/img/edit.png" width="18">
+          </span>
+          <span class="inline-item item-ok" *ngIf="iteminfo.isEdit" tappable (click)="save(iteminfo)">
+            OK            
+          </span>
+          <span class="inline-item" tappable (click)="goToComfortPhoto()">
+            <img src="assets/img/pic.png" width="18">
+          </span>
+          <ion-checkbox class="inline-item"  [(ngModel)]="iteminfo.isChecked" ></ion-checkbox>
+        </div>
+        <div class="legend-foot">
+            <div class="legend-foot-item" (click)="toggleLegend()">Cancle</div> 
+            <span class="split-line"></span>
+            <div class="legend-foot-item" (click)="toggleLegend()">OK</div> 
+        </div>
+      </div>
+
+  <div id="floor-chart"></div>
   <footer ></footer>
 </ion-content>
