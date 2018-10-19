@@ -42,19 +42,55 @@ page-confort-floor {
     line-height: 30px;
     text-align: center;
     color:black;
-    position: relative;
-    .legend-wraper{
+
+    }
+
+
+  }
+   .comfort-legend-wraper{
       color:white;
       position: absolute;
-      top:30px;
-      right:0;
+      top:180px;
+      width:300px;
+      left:50%;
+      transform:translateX(-50%);
+      height: 289px;
       z-index: 4;
       background: rgb(33,33,33);
       padding:20px;
-      width: 290px;
+      padding-top:0;
       background: #3B3E41;
       box-shadow: 0 1px 2px 0 rgba(95,95,95,0.50);
       border-radius: 13px;
+      .legend-title{
+        font-size: 18px;
+        text-align: center;
+        border-bottom: 1px solid #D0CECE;
+        height: 50px;
+        line-height: 50px;
+      }
+      .legend-foot{
+        height: 50px;
+        line-height: 52px;
+        border-top: 1px solid #FFFFFF;
+        margin:20px auto 0 auto;
+        text-align: center;
+        .legend-foot-item{
+          display: inline-block;
+          width:120px;
+          font-size: 18px;
+          color: #4A90E2;
+          text-align: center; 
+        }
+        .split-line{
+          height: 30px;
+          width:1px;
+          display: inline-block;
+          background: white;
+          opacity: 0.3;
+          vertical-align: middle;
+        }
+      }
       .input-style{
         margin:11px 8px 11px 0;
       }
@@ -93,8 +129,4 @@ page-confort-floor {
       .legend-white{
         background: #FFFFFF;
       }
-    }
-
-
-  }
 }

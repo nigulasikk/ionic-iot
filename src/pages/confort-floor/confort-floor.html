@@ -33,7 +33,9 @@
     </ion-item>
     <div class="legend">
       <span (click)="toggleLegend()">Sensor Legend</span>
-      <div class="legend-wraper" *ngIf="legendShow">
+    </div>
+      <div class="comfort-legend-wraper" *ngIf="legendShow">
+        <div class="legend-title">Legend</div>
         <div class="item" *ngFor="let iteminfo of sensors">
           <div  class="inline-item legend-color legend-white"></div>
           <ion-label style="width: 100px;" *ngIf="!iteminfo.isEdit" class="inline-item">{{iteminfo.value}}</ion-label>
@@ -49,8 +51,12 @@
           </span>
           <ion-checkbox class="inline-item"  [(ngModel)]="iteminfo.isChecked" ></ion-checkbox>
         </div>
+         <div class="legend-foot">
+            <div class="legend-foot-item" (click)="toggleLegend()">Cancle</div> 
+            <span class="split-line"></span>
+            <div class="legend-foot-item" (click)="toggleLegend()">OK</div> 
+        </div>
       </div>
-    </div>
     
 
   <div id="floor-chart"></div>
