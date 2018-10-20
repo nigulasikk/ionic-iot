@@ -1,4 +1,32 @@
 page-comfort {
+  .chart-wraper{
+    max-height: 430px;
+    overflow-y: scroll;
+  }
+  .vertical-line-wraper{
+    position: absolute;
+    top:30px;
+    left:80px;
+    z-index: 2;
+    opacity: .5;
+    margin-top:30px;
+    .line-temp{
+      width:55px;
+      height: 24px;
+      line-height: 24px;
+      border: 1px solid #FFFFFF;
+      border-radius: 15px;
+      text-align: center;
+      margin-top:10px;
+    }
+    .line{
+      height: 420px;
+      width:1px;
+      border-left:dashed 1px white;
+      margin:0 auto;
+      opacity: .3;
+    }
+  }
   .iot-slide{
     height: auto;
     .swiper-slide{

@@ -17,13 +17,35 @@
     <div class="jdi-tab" tappable (click)="changeTab('equipment')">Equipment</div>
   </div>
   <ion-slides class="iot-slide">
-    <ion-slide>
+    <ion-slide >
       <div class="past-time">Past 15 min</div>
-      <confort-chart></confort-chart>
+      <div class="chart-wraper">
+        <confort-chart></confort-chart>
+      </div>
+      <div style="height: 55px;"></div>
+      <div class="vertical-line-wraper">
+        <div class="line"></div>
+        <div class="line-temp">10℃</div>
+      </div>
+       <div class="vertical-line-wraper" style="left:280px;">
+        <div class="line"></div>
+        <div class="line-temp">30℃</div>
+      </div>
+
     </ion-slide>
     <ion-slide>
       <div class="past-time">Past 15 min</div>
-      <comfort-wet></comfort-wet>
+      <div class="chart-wraper">
+        <comfort-wet></comfort-wet>
+      </div>
+      <div class="vertical-line-wraper">
+        <div class="line"></div>
+        <div class="line-temp">10%</div>
+      </div>
+       <div class="vertical-line-wraper" style="left:280px;">
+        <div class="line"></div>
+        <div class="line-temp">30%</div>
+      </div>
     </ion-slide>
     
   </ion-slides>
