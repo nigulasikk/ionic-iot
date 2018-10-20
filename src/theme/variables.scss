@@ -14,6 +14,16 @@ $font-path: "../assets/fonts";
 
 $text-color:        #ffffff;
 $background-color:  rgb(33,33,33);
+.mask{
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background: black;
+  opacity: .3;
+  z-index: 24;
+}
 body .item-ios.item-block .item-inner{
   border-bottom: none;
 }
